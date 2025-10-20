@@ -1,0 +1,19 @@
+name: Test environment secret access
+
+on: 
+  push:
+    branches: 
+      - add-environment-test
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v4
+
+    - name: Print secret
+      run: | 
+        echo "Using secret: ${{ secrets.FIRST_SECRET }}"
+        echo "Using variable: ${{ vars.DEPLOY_SERVER }}"
