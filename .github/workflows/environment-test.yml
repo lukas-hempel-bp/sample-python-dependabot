@@ -14,4 +14,4 @@ jobs:
     - name: Print secret
       run: | 
         echo "Using secret: ${{ secrets.FIRST_SECRET }}"
-        echo "Using variable: ${{ variables. DEPLOY_SERVER }}"
+        echo "Using variable: ${{ vars.DEPLOY_SERVER }}"
