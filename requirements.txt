@@ -1,5 +1,5 @@
 certifi==2025.10.5
-chardet==3.0.4
+chardet==5.2.0
 click==8.3.0
 Django==5.2.7
 Flask==0.12
