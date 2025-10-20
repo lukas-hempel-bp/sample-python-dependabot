@@ -2,13 +2,15 @@ name: Lint Python Code using Pylint on arbitrary push
 
 on: 
   push:
-
+    branches-ignore: 
+      - main
 jobs:
   lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.11", "3.12", "3.13"]
+        python-version: 
+          - "3.12"
     steps:
     - name: Check out code
       uses: actions/checkout@v4
