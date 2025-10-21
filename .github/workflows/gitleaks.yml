@@ -1,0 +1,22 @@
+name: Detect exposed secrets
+
+on: 
+  pull-request:
+    types: 
+      - opened
+      - synchronized
+      - reopened 
+    branches: 
+      - main
+
+jobs:
+  detect-secrets:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v4
+
+    - name: Execute gitleaks
+      uses: gitleaks/gitleaks-action@v2
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
