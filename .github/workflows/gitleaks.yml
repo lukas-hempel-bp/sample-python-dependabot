@@ -1,6 +1,7 @@
 name: Detect exposed secrets
 
 on: 
+  push:
   pull_request:
     types: 
       - opened
