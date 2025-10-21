@@ -1,7 +1,7 @@
 name: Detect exposed secrets
 
 on: 
-  pull-request:
+  pull_request:
     types: 
       - opened
       - synchronized
