@@ -4,6 +4,9 @@ on:
   push:
     branches-ignore: 
       - main
+    paths: 
+      - '**.py'
+      
 jobs:
   lint:
     runs-on: ubuntu-latest
