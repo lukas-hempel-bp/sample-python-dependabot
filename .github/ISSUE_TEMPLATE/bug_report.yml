@@ -1,0 +1,59 @@
+
+name: 🐞 Bug Report
+description: Report a bug related to DevOps or CI/CD workflows.
+title: "[Bug] - <short description>"
+labels: [bug, needs-triage]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug. Please fill out the following details to help us reproduce and fix the issue.
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Describe the environment (e.g., GitHub Actions, Docker, Kubernetes, OS)
+      placeholder: "GitHub Actions on Ubuntu-latest"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide a step-by-step guide to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Screenshots / Logs
+      description: Add any relevant screenshots or logs.
+      placeholder: "Paste logs or drag screenshots here"
+    validations:
+      required: false
