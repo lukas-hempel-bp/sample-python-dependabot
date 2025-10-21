@@ -2,7 +2,7 @@
 name: 🐞 Bug Report
 description: Report a bug related to DevOps or CI/CD workflows.
 title: "[Bug] - <short description>"
-labels: [bug, needs-triage]
+labels: [bug]
 assignees: []
 
 body:
