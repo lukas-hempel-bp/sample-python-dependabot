@@ -1,0 +1,30 @@
+# Normalize line endings
+*.sh text eol=lf
+*.bat text eol=crlf
+*.py text 
+*.md text 
+
+# Treat YAML and JSON as text
+*.yml text 
+*.yaml text 
+*.json text 
+*.txt text 
+
+# Ignore directories and files in exports
+tests/ export-ignore
+.env* export-ignore
+
+# Docker
+Dockerfile text 
+docker-compose.yml text 
+
+# GitHub Workflows
+.github/workflows/*.yml 
+.github/workflows/*.yaml 
+
+# GitHub language stats
+docs/** linguist-documentation
+*.md linguist-documentation
+
+# As example to explain Git what can't be diffed: 
+*.png binary 
