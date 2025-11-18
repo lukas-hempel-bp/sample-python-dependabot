@@ -1,6 +1,6 @@
 certifi==2025.10.5
 chardet==3.0.4
-click==8.3.0
+click==8.3.1
 Django==5.2.7
 Flask==0.12
 idna==2.7
